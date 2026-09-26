@@ -2,7 +2,7 @@
 # Set Environment in Dokploy UI (writes `.env` next to compose). Do not commit secrets.
 services:
   storageui:
-    image: hahahumble/storageui:0.2.2
+    image: samerelhamdousa/storageui:presigned-share
     restart: unless-stopped
     env_file:
       - .env
