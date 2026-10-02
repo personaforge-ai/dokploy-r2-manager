@@ -3,6 +3,8 @@
 services:
   storageui:
     image: samerelhamdousa/storageui:presigned-share
+    # The tag is rebuilt in place (fork workflow): pull on every deploy or Dokploy keeps the old image.
+    pull_policy: always
     restart: unless-stopped
     env_file:
       - .env
