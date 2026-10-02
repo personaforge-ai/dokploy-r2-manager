@@ -35,7 +35,11 @@
 - **Docker Hub:** https://hub.docker.com/r/hahahumble/storageui  
 - **توثيق المتغيرات:** https://storageui.dev/docs/environment-variables  
 
-**الصورة المثبتة في هذا المستودع:** `hahahumble/storageui:0.2.2`
+**الصورة المستعملة هلق:** `samerelhamdousa/storageui:presigned-share`. هي fork تبع المالك عن storageui ([`SamerElhamdo/storageui`](https://github.com/SamerElhamdo/storageui))، وفيها شغلتين زيادة:
+- **روابط مشاركة مؤقتة وموقّعة** للملفات.
+- **رابط بيفتح مجلد مباشرة:** `/?bucket=<bucket>&path=<folder>/`، أو `/?storage=<اسم الاتصال>&path=…`. بيضل شغّال حتى لو مرّ على صفحة الدخول. الأدمن تبع المنصة بيستعمله بزر «Open folder in R2 manager».
+
+**البناء:** بالـ fork، من GitHub Actions ← «Build and Push Docker Image» (`workflow_dispatch`). الـ compose فيه `pull_policy: always`، فأي deploy بيسحب آخر نسخة من الـ tag.
 
 ---
 
