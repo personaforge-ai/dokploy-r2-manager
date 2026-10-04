@@ -1,5 +1,9 @@
 # Dokploy — Cloudflare R2 / S3 Web Manager
 
+> **⚠️ من 2026-10-04 هالريبو ما عاد هو اللي بينشر الموقع.** `r2-manager.aiconicstudio.ai` صار تطبيق Dokploy اسمه `r2-manager` (مشروع `file-system`)، **وبينبني من سورس الـ fork** [`SamerElhamdo/storageui`](https://github.com/SamerElhamdo/storageui) فرع `main`. أي push لـ `main` بينشر لحاله بـ webhook. التفاصيل بـ [`DEPLOY.md`](https://github.com/SamerElhamdo/storageui/blob/main/DEPLOY.md) بالـ fork.
+> الـ compose اللي هون (صورة Docker Hub) **موقّف، والـ autoDeploy تبعه مطفي**، ومخلّينه كخطة رجعة أخيرة بس.
+
+
 حزمة **Docker Compose** جاهزة للنشر على [Dokploy](https://dokploy.com) لتوفير واجهة ويب لإدارة **Cloudflare R2** (وأي endpoint متوافق مع S3) بدون AWS وبدون تشغيل MinIO كخدمة.
 
 ---
